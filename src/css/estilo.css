@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+img{
+   max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+/* logo */
+
+.logo .imagem{
+    width: 100px;
+}
+
+
+.logo{
+    display: flex;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.logo .titulo{
+    transition: 0.3s ease-in-out;
+}
+
+ .logo .titulo:hover{
+    color: rgba(74, 243, 178, 0.925);
+}
+
+.logo .titulo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 8px;
+    font-weight: 800;
+}
+
+/* Logo */
+
+/* Cabecalho */
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+    max-width: 1170px;  
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.cabecalho .menu {
+    display: flex;
+}
+
+.cabecalho .menu .item{
+    margin: 10px;
+}
+
+.cabecalho .menu .item a{
+    transition: 0.3s ease-in-out;
+    padding: 15px;
+}
+
+.cabecalho .menu .item a:hover{
+    background-color: rgba(74, 243, 178, 0.925);
+    color: white;
+}
+
+/* Cabecalho */
+
+/* Conteudo Pincipal */
+
+.conteudo-principal .painel{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+
+}
+
+.conteudo-principal .painel .imagem{
+    background-image: url(../imagem/importacao.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+    position: absolute;
+    z-index: -1;
+}
+
+.conteudo-principal .conteudo{
+    position:absolute;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+
+    transition: 0.5s ease-in-out;
+    
+}
+
+.conteudo-principal .conteudo:hover{
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 40px;
+    
+}
+
+.conteudo-principal .titulo{
+    font-size: 50px;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal .texto{
+    text-align: center;
+    font-size: 20px;   
+    width: 380px;
+    position: relative; 
+}
+
+.conteudo-principal .texto p{
+    color: white;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+
+/* Conteudo Pincipal */
+
+/* Rodapé */
+
+.rodape{
+    padding: 80px 0 20px 0;
+}
+
+.rodape .navegacao{
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.rodape .redes-sociais{
+    display: flex;
+}
+
+.rodape .redes-sociais a{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 50%;
+    width: 65px;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.rodape .redes-sociais a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(74, 243, 178, 0.925);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.rodape .redes-sociais a:hover::before{
+    transform: translateX(0);
+}
+
+.rodape .redes-sociais a:hover{
+    color: #ffffff;
+}
+
+.rodape .copy{
+  text-align: center;
+  font-weight: 800;
+  margin-top: 20px;
+}
